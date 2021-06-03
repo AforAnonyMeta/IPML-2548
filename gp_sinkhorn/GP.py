@@ -32,7 +32,7 @@ class GPRegression_fast(gp.models.GPRegression):
                 self.Kff_inv = precompute_inv
 
     def forward(self, Xnew, full_cov=False, noiseless=True,reuse_kernel=None, debug=False):
-        r"""
+        """
         Computes the mean and covariance matrix (or variance) of Gaussian Process
         posterior on a test input data :math:`X_{new}`:
 
